@@ -128,7 +128,12 @@ def factorial(n):
     # multiply result by each number
     # return result
 
-    pass
+    result = 1
+    for i in range(1, n + 1):
+        result *= i
+    return result
+print(factorial(5))
+
 
 
 # ===============================
@@ -182,4 +187,4 @@ def find_duplicates(items):
     return dup_items
 
 print(find_duplicates(["python", "code", "slindile", "python", "slindile"]))
-# ...existing code...
+
